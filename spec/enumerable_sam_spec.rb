@@ -80,6 +80,19 @@ RSpec.describe Enumerable do
     end
   end
 
+  #my_none
+
+  describe "#my_none" do
+    it 'checks if none of the elements comply a given condition, when at least one does' do 
+      expect([1, 3, 2].my_none? {|i| i%2==0} ).to eq(false)
+    end
+  end
+
+  describe "#my_none" do
+    it 'checks if none of the elements comply a given condition, when none does' do 
+      expect([1, 3, 1].my_none? {|i| i%2==0} ).to eq(true)
+    end
+  end
 
 end
 
