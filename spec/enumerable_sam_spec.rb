@@ -6,26 +6,19 @@ require './lib/enumerables.rb'
 #spec/enumerable_spec.rb
 
 
-class DummyClass
-  include Enumerable
-end
+# class DummyClass
+#   include Enumerable
+# end
 
 RSpec.describe Enumerable do
 
-  describe "#add" do
-    it 'blabla' do
-      dc = DummyClass.new
-      expect(dc.add(3,2)).to eq(5)
+  describe "#my_select" do
+    it 'returns [2, 4]' do
+      # dc = DummyClass.new
+      expect([1,2,3,4,5].my_select{|x| x.even?}).to eq([2, 4])
+    end
   end
-
-  describe "#add" do
-    it 'blabla' do
-      dc = DummyClass.new
-      expect(dc.add(3,2)).to eq(5)
-  end
-
-  
 end
+ 
 
-end
  
