@@ -41,8 +41,15 @@ RSpec.describe Enumerable do
       expect([3,3,2,3,5].my_count{ |x| x%2 == 0 }).to eq(1)
     end
   end
+  describe "#my_any?" do
+    it 'returns  true ' do
+      # dc = DummyClass.new
+      expect(["ant", "bear", "cat"].my_any?{ |word| word.length >= 3 }).to eq(true)
+    end
+  end
 
 end
- 
+#  [ant bear cat].any? { |word| word.length >= 3 } #=> true
+
 
  
