@@ -1,8 +1,6 @@
-#spec/calculator_spec.rb
 require './lib/enumerables.rb' 
 
 #=> add this
-
 #spec/enumerable_spec.rb
 
 RSpec.describe Enumerable do
@@ -86,12 +84,3 @@ RSpec.describe Enumerable do
   end
 
 end
-
-
-
-#
-
-#  [ant bear cat].any? { |word| word.length >= 3 } #=> true
-
-
- 
