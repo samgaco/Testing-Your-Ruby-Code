@@ -47,7 +47,12 @@ RSpec.describe Enumerable do
       expect(["ant", "bear", "cat"].my_any?{ |word| word.length >= 3 }).to eq(true)
     end
   end
-
+  describe "#my_any?" do
+    it 'returns  false ' do
+      # dc = DummyClass.new
+      expect(["ant", "bear", "cat"].my_any?{ |word| word.length >= 6 }).to eq(false)
+    end
+  end
 end
 #  [ant bear cat].any? { |word| word.length >= 3 } #=> true
 
