@@ -1,5 +1,5 @@
 # Enumerable methods
-This repository is created to test a module which is an implementation of different enumerable methods already include with ruby from scracth.
+This repository is created to test a module which is an implementation of different enumerable methods already included with ruby from scracth.
 
 ### Prerequisites
 You will need to have Ruby installed with the rspec gems
