@@ -9,9 +9,7 @@ Clone the repository and execute the tests with the command
 
 ```
 rspec
-
 ```
-
 ## Built With
 
 * [Ruby](https://www.ruby-lang.org/en/news/2018/12/25/ruby-2-6-0-released/)
